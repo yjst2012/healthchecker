@@ -8,7 +8,7 @@ do
 {
     start_time=$(date +'%s')
     ssh $host "hostname" &>/dev/null
-    sleep 2
+    sleep 5
     stop_time=$(date +'%s')
     time_consuming=$((stop_time-start_time))
     echo "$host: $time_consuming" >>hostname.txt
